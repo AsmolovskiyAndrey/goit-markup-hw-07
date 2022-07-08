@@ -1,0 +1,103 @@
+/* HEADER-flex для всего хедера */
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    top: 0;
+    z-index: 9;
+
+    border-bottom: 1px solid var(--border-header);
+    background-color: var(--text-bgc-color);
+}
+
+.header--flex {
+    display: flex;
+}
+
+.nav--flex {
+    display: flex;
+    align-items: center;
+}
+
+/* nav */
+.nav-list {
+    display: flex;
+}
+
+/* Применит отступ ко всем элементам кроме последнего */
+.nav-list__li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    position: relative;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--title-main-color);
+
+    transition: color var(--animation);
+}
+
+.nav__link--active {
+    color: var(--text-secondary-color)
+}
+
+.nav__link--active::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--text-secondary-color);
+    border-radius: 2px;
+}
+
+/* adress header */
+.adress {
+    display: flex;
+    margin-left: auto;
+}
+
+/* Применит отступ ко всем элементам кроме последнего */
+.adress__list:not(:last-child) {
+    margin-right: 50px;
+}
+
+.adress__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.adress__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--icon-header);
+
+    transition: color var(--animation);
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.adress__link:hover,
+.adress__link:focus {
+    color: var(--text-secondary-color);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--text-secondary-color);
+}
