@@ -6,6 +6,7 @@
     font-size: 14px;
     line-height: 1.15;
     padding-top: 80px;
+    /* gap узнать */
 }
 :root{
     --text-secondary-color: #2196F3;
