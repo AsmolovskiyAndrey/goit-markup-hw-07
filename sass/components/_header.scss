@@ -6,8 +6,8 @@
     top: 0;
     z-index: 9;
 
-    border-bottom: 1px solid var(--border-header);
-    background-color: var(--text-bgc-color);
+    border-bottom: 1px solid $border-header;
+    background-color: $text-bgc-color;
 }
 
 .header--flex {
@@ -38,16 +38,19 @@
 
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: var(--title-main-color);
+    color: $title-main-color;
 
-    transition: color var(--animation);
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+    color: $text-secondary-color;
+    }
 }
-
 .nav__link--active {
-    color: var(--text-secondary-color)
-}
+    color: $text-secondary-color;
 
-.nav__link--active::after {
+    &::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -56,10 +59,10 @@
     content: "";
     width: 100%;
     height: 4px;
-    background-color: var(--text-secondary-color);
+    background-color: $text-secondary-color;
     border-radius: 2px;
+    }
 }
-
 /* adress header */
 .adress {
     display: flex;
@@ -83,21 +86,16 @@
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--icon-header);
+    color: $icon-header;
 
-    transition: color var(--animation);
+    transition: color $animation;
 
     font-weight: 500;
     letter-spacing: 0.02em;
     color: inherit;
-}
 
-.adress__link:hover,
-.adress__link:focus {
-    color: var(--text-secondary-color);
-}
-
-.nav__link:hover,
-.nav__link:focus {
-    color: var(--text-secondary-color);
+    &:hover,
+    &:focus {
+    color: $text-secondary-color;
+    }
 }

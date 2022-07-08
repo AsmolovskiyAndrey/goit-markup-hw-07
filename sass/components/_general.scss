@@ -1,7 +1,7 @@
 .body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--text-bgc-color);
-    color: var(--text-firstly-color);
+    background-color: $text-bgc-color;
+    color: $text-firstly-color;
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.15;

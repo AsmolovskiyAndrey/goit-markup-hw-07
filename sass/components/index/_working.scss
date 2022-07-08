@@ -9,10 +9,10 @@
 
 .working__li {
     position: relative;
-}
 
-.working__li:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .working__box {
@@ -33,7 +33,7 @@
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--text-bgc-color);
+    color: $text-bgc-color;
     z-index: 2;
 }
 
@@ -42,7 +42,7 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    color: var(--title-main-color);
+    color: $title-main-color;
     text-align: center;
     margin-bottom: 50px;
 }

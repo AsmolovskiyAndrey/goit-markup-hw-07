@@ -5,17 +5,17 @@
 
 .benefits__li {
     width: 270px;
-}
 
-.benefits__li:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .benefits__bg {
     height: 120px;
     width: 270px;
     margin-bottom: 30px;
-    background-color: var(--light-bgc);
+    background-color: $light-bgc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--title-main-color);
+    color: $title-main-color;
 }
 
 .benefits__text {
