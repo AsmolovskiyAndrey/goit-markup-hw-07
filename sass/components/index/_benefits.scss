@@ -1,5 +1,6 @@
 /* BENEFITS INDEX*/
 .benefits {
+    @extend %list;
     display: flex;
 }
 

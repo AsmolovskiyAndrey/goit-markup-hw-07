@@ -9,11 +9,15 @@
 }
 
 .clients__list {
+    @extend %list;
     display: flex;
 
     &:not(:last-child) {
     margin-right: 30px;
     }
+}
+.clients__li{
+    @extend %list;
 }
 
 .clients__link {
@@ -23,7 +27,7 @@
     width: 170px;
     height: 92px;
     color: $icon-social;
-    border: 1px solid #AFB1B8;
+    @include border(#AFB1B8);
     border-radius: 4px;
 
     transition-property: border-color, color;

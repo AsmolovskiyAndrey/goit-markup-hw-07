@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/* Убрал точки со списков ul */
+.projects, .filter__list, .footer-social__li, .footer-social, .footer__list, .clients__li, .clients__list, .team-social__li, .team-social, .team__list, .benefits, .adress, .nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Убрал подчёркивание со ссылок */
+.project_link, .footer-social__link, .team-social__link, .adress__link, .nav__link, .logo {
+  text-decoration: none;
+}
+
 .body {
   font-family: "Roboto", sans-serif;
   background-color: #FFFFFF;
@@ -46,17 +57,6 @@ img {
 
 h1, h2, h3, p, ul {
   margin: 0;
-}
-
-/* Убрал точки со списков ul */
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-/* Убрал подчёркивание со ссылок */
-.link {
-  text-decoration: none;
 }
 
 /* logo */

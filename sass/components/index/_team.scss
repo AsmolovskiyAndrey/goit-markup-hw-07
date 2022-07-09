@@ -6,6 +6,7 @@
 }
 
 .team__list {
+    @extend %list;
     display: flex;
     margin: -15px;
 }
@@ -39,17 +40,21 @@
 
 /* team-social */
 .team-social {
+    @extend %list;
     display: flex;
     margin: 0 auto;
     padding: 0;
     justify-content: center;
 }
-
+.team-social__li{
+    @extend %list;
+}
 .team-social__li:not(:last-child) {
     margin-right: 10px;
 }
 
 .team-social__link {
+    @extend %link;
     width: 44px;
     height: 44px;
     display: flex;

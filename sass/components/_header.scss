@@ -21,6 +21,7 @@
 
 /* nav */
 .nav-list {
+    @extend %list;
     display: flex;
 }
 
@@ -30,6 +31,7 @@
 }
 
 .nav__link {
+    @extend %link;
     position: relative;
 
     display: block;
@@ -65,6 +67,7 @@
 }
 /* adress header */
 .adress {
+    @extend %list;
     display: flex;
     margin-left: auto;
 }
@@ -82,6 +85,7 @@
 }
 
 .adress__link {
+    @extend %link;
     display: flex;
     align-items: center;
     padding-top: 32px;

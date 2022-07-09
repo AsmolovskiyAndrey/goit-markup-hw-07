@@ -91,7 +91,7 @@
 
     fill: $logo-text-color;
     background: $text-bgc-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include border();
     border-radius: 50%;
 
     transition: fill $animation;
@@ -154,7 +154,7 @@
     width: 448px;
     height: 40px;
     padding-left: 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    @include border(rgba(33, 33, 33, 0.2));
     border-radius: 4px;
 
     transition: border $animation;
@@ -164,11 +164,10 @@
     outline: none;
     }
 
-    &:focus~.hero-form__svg {
+    &:focus ~ .hero-form__svg {
     fill: $text-secondary-color;
     }
 }
-
 .hero-form__label {
     margin-bottom: 4px;
 }
