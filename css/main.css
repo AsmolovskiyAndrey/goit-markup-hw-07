@@ -695,6 +695,7 @@ h1, h2, h3, p, ul {
 
 .footer-social__list {
   display: flex;
+  padding: 0;
 }
 
 .footer-social__li:not(:last-child) {
