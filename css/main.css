@@ -6,7 +6,7 @@
 }
 
 /* Убрал подчёркивание со ссылок */
-.project_link, .footer-social__link, .team-social__link, .adress__link, .nav__link, .logo {
+.projects__link, .footer-social__link, .team-social__link, .adress__link, .nav__link, .logo {
   text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ h1, h2, h3, p, ul {
   background-color: #FFFFFF;
 }
 
-.header--flex {
+.header__flex {
   display: flex;
 }
 
