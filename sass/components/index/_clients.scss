@@ -12,12 +12,14 @@
     @extend %list;
     display: flex;
 
-    &:not(:last-child) {
-    margin-right: 30px;
-    }
+
 }
 .clients__li{
     @extend %list;
+    
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .clients__link {

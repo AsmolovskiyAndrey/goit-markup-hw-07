@@ -379,9 +379,21 @@
                 name="email"
                 id="mail"
                 autocomplete="email"
-                placeholder=" "
+                placeholder="John Smith"
+                required
+                minlength="3"
               />
-              <label class="footer-form__label" for="mail">E-mail</label>
+              <label class="footer-form__label" for="mail">E-mail *</label>
+              <span class="footer-form__warning"
+                >Адрес должен содержать символ @ и быть длиннее 3-х символов
+              </span>
+              <svg class="footer-form__icon">
+                <use
+                  href="./images/svg-index/warning_sprite.svg#icon-warning"
+                  width="20"
+                  height="20"
+                ></use>
+              </svg>
             </div>
             <div class="footer-button">
               <button class="footer-button__text" type="submit">

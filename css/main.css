@@ -607,7 +607,8 @@ h1, h2, h3, p, ul {
 .clients__list {
   display: flex;
 }
-.clients__list:not(:last-child) {
+
+.clients__li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -764,7 +765,24 @@ h1, h2, h3, p, ul {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form__input::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form__input:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form__input::placeholder {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form__input {
@@ -776,7 +794,7 @@ h1, h2, h3, p, ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding: 15px 16px 15px 16px;
+  padding: 15px 30px 15px 16px;
 }
 .footer-form__input:not(:-moz-placeholder-shown) + .footer-form__label {
   transform: translateY(-46px);
@@ -789,6 +807,52 @@ h1, h2, h3, p, ul {
 }
 .footer-form__input:focus {
   outline: none;
+}
+.footer-form__input:focus::-moz-placeholder {
+  opacity: 1;
+}
+.footer-form__input:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+.footer-form__input:focus::placeholder {
+  opacity: 1;
+}
+.footer-form__input:valid:not(:-moz-placeholder-shown) ~ .footer-form__icon {
+  fill: rgb(87, 208, 87);
+}
+.footer-form__input:valid:not(:-ms-input-placeholder) ~ .footer-form__icon {
+  fill: rgb(87, 208, 87);
+}
+.footer-form__input:focus:valid ~ .footer-form__icon, .footer-form__input:valid:not(:placeholder-shown) ~ .footer-form__icon {
+  fill: rgb(87, 208, 87);
+}
+.footer-form__input:focus:invalid ~ .footer-form__icon {
+  fill: rgb(251, 251, 57);
+}
+.footer-form__input:focus:invalid ~ .footer-form__warning {
+  opacity: 1;
+}
+
+.footer-form__warning {
+  display: flex;
+  max-width: 358px;
+  position: absolute;
+  padding: 5px;
+  color: rgb(251, 251, 57);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer-button */
